@@ -5,6 +5,7 @@ import Cadastro from "../pages/Cadastro/index.tsx";
 import Home from "../pages/Home/index.tsx";
 import Sobre from "../pages/Sobre/index.tsx";
 import BemEstar from "../pages/BemEstar/index.tsx";
+import Dashboard from "../pages/Dashboard/index.tsx";
 import Integrantes from "../pages/Integrantes/index.tsx";
 import Erro from "../pages/Erro/index.tsx";
 import { Artigo } from "../pages/Artigo/Artigo.tsx";
@@ -23,6 +24,7 @@ export const router = createBrowserRouter([
       { path: "/cadastro", element: <Cadastro /> },
       { path: "/home", element: <Home /> },
       { path: "/artigo/:id", element: <Artigo /> },
+      {path: "/dashboard", element: <Dashboard />},
       { path: "/sobre", element: <Sobre /> },
       { path: "/bemestar", element: <BemEstar /> },
       { path: "/integrantes", element: <Integrantes /> },

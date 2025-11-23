@@ -1,19 +1,6 @@
 import { useMemo, useState, type CSSProperties } from "react";
 import { FaRegSmile, FaHeartbeat, FaCodeBranch } from "react-icons/fa";
 
-/**
- * Página Bem-Estar - versão aprimorada (estilo das suas imagens)
- *
- * Mantém todas as funcionalidades do Código 1:
- * - termômetro / slider de humor com emoji central
- * - botão "Registrar Humor"
- * - seção Hábitos de Trabalho Saudáveis (Alerta de Pausa)
- * - seção Relaxamento & Integrações (Respiração Guiada + Links)
- *
- * Estética: cartões com canto arredondado grande, topo colorido (outline),
- * sombras suaves, tipografia forte e espaçamento similar às imagens.
- */
-
 function MoodMonitor() {
   const [moodValue, setMoodValue] = useState<number>(75);
 
