@@ -10,8 +10,6 @@ import Dashboard from "../pages/Dashboard/index.tsx";
 import Integrantes from "../pages/Integrantes/index.tsx";
 import RH from "../pages/RH/index.tsx";
 import Erro from "../pages/Erro/index.tsx";
-import { Artigo } from "../pages/Artigo/Artigo.tsx";
-import Perfil from "../pages/Perfil/index.tsx";
 import Salvos from "../pages/Salvos/index.tsx";
 import "../main.css";
 
@@ -25,7 +23,6 @@ export const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/cadastro", element: <Cadastro /> },
       { path: "/home", element: <Home /> },
-      { path: "/artigo/:id", element: <Artigo /> },
       {path: "/dashboard", element: <Dashboard />},
       {path: "/softskills", element: <SoftSkills />},
       { path: "/sobre", element: <Sobre /> },
@@ -34,8 +31,6 @@ export const router = createBrowserRouter([
       { path: "/integrantes", element: <Integrantes /> },
       { path: "/login", element: <Login /> },
       { path: "/editar-cadastro/:id", element: <Cadastro /> },
-      { path: "/perfil", element: <Perfil /> },
-      { path: "/salvos", element: <Salvos /> },
     ],
   },
 ], {basename:"/sistema-flow"} );
