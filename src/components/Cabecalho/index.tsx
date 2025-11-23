@@ -59,8 +59,7 @@ export default function Cabecalho() {
         <Link to="/contato" className={linkClasses}>
           Contato
         </Link>
-
-        {/* LINKS ADICIONADOS DO CÓDIGO 2 */}
+        
         <Link to="/dashboard" className={linkClasses}>
           <FaChartLine /> Dashboard
         </Link>
