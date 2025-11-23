@@ -10,7 +10,6 @@ import Dashboard from "../pages/Dashboard/index.tsx";
 import Integrantes from "../pages/Integrantes/index.tsx";
 import RH from "../pages/RH/index.tsx";
 import Erro from "../pages/Erro/index.tsx";
-import Salvos from "../pages/Salvos/index.tsx";
 import "../main.css";
 
 

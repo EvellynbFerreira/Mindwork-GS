@@ -1,8 +1,12 @@
-import { StrictMode } from "react";
+import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 import { router } from "./routes/AppRoutes.tsx";
-import { NoticiasProvider } from "./context/NoticiasContext.tsx";
+
+function NoticiasProvider({ children }: { children: React.ReactNode }) {
+
+  return <>{children}</>;
+}
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

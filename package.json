@@ -1,6 +1,6 @@
 {
-  "homepage": "https://1tdspw-25.github.io/sistema-flow/",
-  "name": "sistema-flow",
+  "homepage": "https://github.com/EvellynbFerreira/Mindwork-GS",
+  "name": "Mindwork",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -52,12 +52,12 @@
   "main": "eslint.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1TDSPW-25/sistema-flow.git"
+    "url": "git+https://github.com/EvellynbFerreira/Mindwork-GS.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/1TDSPW-25/sistema-flow/issues"
+    "url": "https://github.com/EvellynbFerreira/Mindwork-GS/issues"
   }
 }
