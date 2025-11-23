@@ -3,7 +3,7 @@ import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import type { FormEvent } from "react";
 import type { UsuarioType } from "../../types/usuario";
 
-const API_URL = "http://localhost:3001";
+const API_URL = "https://mindwork-gs.onrender.com";
 
 export default function Login() {
     const navigate = useNavigate();
@@ -12,7 +12,7 @@ export default function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-   
+
     const [error, setError] = useState<string | null>(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
 
