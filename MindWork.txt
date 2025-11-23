@@ -1,0 +1,143 @@
+# 💜 MindWork --- Monitor Ético de Saúde Mental e Produtividade
+
+O MindWork é uma aplicação front-end criada para promover saúde mental,
+bem-estar emocional e produtividade ética em ambientes híbridos e
+remotos. O objetivo é oferecer uma experiência acessível que ajude
+pessoas a entenderem seus hábitos, desenvolverem soft skills e
+acompanharem sua rotina emocional --- sem rastreamento invasivo e com
+total foco em privacidade.
+
+------------------------------------------------------------------------
+
+## 🌟 Funcionalidades
+
+-   Home com apresentação da plataforma\
+-   Login com controle de sessão pelo localStorage\
+-   Dashboard com visão geral do bem-estar\
+-   Página de Soft Skills para desenvolvimento pessoal\
+-   Página de Bem-Estar emocional\
+-   Painel para RH com dados éticos e anonimizados\
+-   Componentes fixos: Header, Card e Footer
+
+------------------------------------------------------------------------
+
+## 🗂️ Estrutura do Projeto
+
+    src/
+     ├── assets/
+     ├── components/
+     │     ├── Cabecalho/
+     │     │     └── index.tsx
+     │     ├──  Card/
+     │     │     └── index.tsx
+     │     ├── Footer/
+     │           └── index.tsx
+     ├── pages/
+     │     ├── Home/
+     │     │     └── index.tsx
+     │     ├── Login/
+     │     │     └── index.tsx
+     │     ├── SoftSkills/
+     │     │     └── index.tsx
+     │     ├── BemEstar/
+     │     │     └── index.tsx
+     │     ├── Dashboard/
+     │     │     └── index.tsx
+     │     └── RH/
+     │           └── index.tsx
+     ├── routes/
+     │     └── AppRoutes.tsx
+     ├── context/
+     │     └── UserContext.tsx
+     ├── hooks/
+     │     └── useAuth.ts
+     ├── types/
+     │     └── user.d.ts
+     ├── App.tsx
+     ├── main.tsx
+     └── main.css
+
+------------------------------------------------------------------------
+
+## 🛠️ Tecnologias Utilizadas
+
+-   React + Vite\
+-   TypeScript\
+-   CSS\
+-   LocalStorage\
+-   Componentização e navegação baseada em estado
+
+------------------------------------------------------------------------
+
+## 🚀 Como Rodar
+
+1.  Clone o projeto\
+
+``` bash
+git clone https://github.com/seu-usuario/MindWork.git
+```
+
+2.  Entre na pasta\
+
+``` bash
+cd MindWork
+```
+
+3.  Instale as dependências\
+
+``` bash
+npm install
+```
+
+4.  Execute\
+
+``` bash
+npm run dev
+```
+
+5.  Acesse\
+
+```{=html}
+<!-- -->
+```
+    http://localhost:5173
+
+------------------------------------------------------------------------
+
+## 🎨 Identidade Visual
+
+**Paleta utilizada:**\
+- Roxo Claro (#A78BFA)\
+- Roxo Profundo (#4C1D95)\
+- Branco (#FFFFFF)\
+- Cinza Suave (#F4F4F5)
+
+------------------------------------------------------------------------
+
+## ♻️ Conexão com ODS
+
+-   ODS 3 --- Saúde e Bem-estar\
+-   ODS 8 --- Trabalho Decente e Crescimento Econômico\
+-   ODS 10 --- Redução das Desigualdades
+
+------------------------------------------------------------------------
+
+## 👩‍💻 Desenvolvido por
+
+Evellyn Ferreira --- 
+Henrique Maran ---
+Pedro Crus ---
+FIAP 2025
+
+------------------------------------------------------------------------
+
+## 📄 Licença
+
+Projeto para fins educacionais, sem uso comercial.
+
+------------------------------------------------------------------------
+
+## 📄 Link projeto Git
+
+https://github.com/EvellynbFerreira/Mindwork-GS
+
