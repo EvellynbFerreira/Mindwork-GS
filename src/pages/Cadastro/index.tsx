@@ -3,7 +3,7 @@ import type { FormEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import type { UsuarioType } from "../../types/usuario";
 
-const API_URL = "http://localhost:3001";
+const API_URL = "https://mindwork-gs.onrender.com";
 
 export default function Cadastro() {
   const navigate = useNavigate();
