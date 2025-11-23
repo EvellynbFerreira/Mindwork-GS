@@ -1,85 +1,104 @@
+import { FaRegLightbulb, FaShieldAlt, FaUsers, FaChartLine } from "react-icons/fa";
 import { FaBookAtlas, FaEye } from "react-icons/fa6";
-import { GiTakeMyMoney } from "react-icons/gi";
-import { BsTelephoneInboundFill } from "react-icons/bs";
+import type { ReactNode } from "react";
+
+interface ContentBlockProps {
+  title: string;
+  children: ReactNode;
+  icon?: ReactNode;
+  colorClass?: string;
+}
+
+function ContentBlock({ title, children, icon, colorClass }: ContentBlockProps) {
+  return (
+    <section className="mb-12">
+      <h2 className={`text-2xl font-semibold mb-3 flex items-center gap-3 ${colorClass}`}>
+        {icon && <span className="text-3xl">{icon}</span>}
+        {title}
+      </h2>
+
+      <div className="text-gray-700 leading-relaxed text-lg bg-white rounded-xl shadow-sm p-6 border border-gray-200">
+        {children}
+      </div>
+    </section>
+  );
+}
+
 export default function Sobre() {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-700 py-16 px-6 md:px-20">
-      <div className="max-w-5xl mx-auto bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-2xl shadow-sm p-10">
-        <h1 className="text-3xl font-bold mb-8 leading-tight border-b pb-4">
-          Sobre Nós
+    <main className="min-h-screen flex flex-col items-center pb-20 bg-gray-50 text-gray-900">
+      <div className="w-full max-w-5xl px-4 sm:px-6 lg:px-8 pt-10">
+
+        {/* Título Principal */}
+        <h1 className="text-4xl font-extrabold text-gray-900 mb-12 text-center">
+          Sobre a MindWork
         </h1>
 
-        <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-3 ">Quem Somos</h2>
-          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-            Somos um portal de notícias digital independente. Buscamos informar
-            com precisão, investigar com rigor e oferecer contexto para o leitor
-            formar sua própria opinião.
+        {/* Quem Somos */}
+        <ContentBlock title="Quem Somos" icon={<FaBookAtlas />} colorClass="text-purple-600">
+          <p>
+            A MindWork é uma plataforma criada para promover o equilíbrio entre alta performance e bem-estar emocional.
+            Nosso foco é ajudar profissionais a crescerem de forma saudável, usando tecnologia e IA ética como aliadas.
           </p>
-        </section>
+        </ContentBlock>
 
-        <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-3 flex items-center gap-x-2">
-            <FaBookAtlas />
-            Missão
-          </h2>
-          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-            Informar com responsabilidade, transparência e compromisso com o
-            interesse público.
+        {/* Missão */}
+        <ContentBlock title="Nossa Missão" icon={<FaRegLightbulb />} colorClass="text-purple-600">
+          <p>
+            Capacitar pessoas a alcançarem seu melhor desempenho ao cuidar da saúde mental.
+            Acreditamos que <strong>produtividade sustentável nasce do equilíbrio emocional</strong>.
           </p>
-        </section>
+        </ContentBlock>
 
-        <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-3 flex items-center gap-x-2">
-            <FaEye />
-            Visão
-          </h2>
-          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-            Ser referência em jornalismo digital, combinando reportagem, dados e
-            participação da audiência.
+        {/* Problema */}
+        <ContentBlock title="O Problema" icon={<FaChartLine />} colorClass="text-purple-600">
+          <p>
+            O ambiente profissional moderno tem sido marcado por burnout, ansiedade e pressão excessiva.
+            A tecnologia, quando usada de forma invasiva, intensifica esse cenário.  
+            A MindWork surge para <strong>quebrar esse ciclo</strong>, oferecendo ferramentas de autoconhecimento,
+            hábitos saudáveis e desenvolvimento emocional.
           </p>
-        </section>
+        </ContentBlock>
 
-        <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-3 flex items-center gap-x-2">
-            <GiTakeMyMoney />
-            Valores
-          </h2>
-          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1 leading-relaxed">
-            <li>Independência editorial</li>
-            <li>Transparência</li>
-            <li>Proteção de fontes</li>
-            <li>Diversidade e inclusão</li>
+        {/* Visão */}
+        <ContentBlock title="Nossa Visão" icon={<FaEye />} colorClass="text-purple-600">
+          <p>
+            Ser uma referência em bem-estar e crescimento humano no ambiente corporativo,
+            unindo tecnologia, empatia e desenvolvimento real.
+          </p>
+        </ContentBlock>
+
+        {/* Diferenciais */}
+        <ContentBlock title="Diferenciais e Ética" icon={<FaShieldAlt />} colorClass="text-purple-600">
+          <ul className="space-y-4">
+            <li className="flex gap-3">
+              <span className="text-purple-500 text-xl mt-1">✓</span>
+              <p><strong>IA Não-Invasiva:</strong> baseada em hábitos, reflexões e autorregistros, sem vigilância.</p>
+            </li>
+
+            <li className="flex gap-3">
+              <span className="text-purple-500 text-xl mt-1">✓</span>
+              <p><strong>Crescimento Profissional:</strong> integração entre soft skills e saúde mental.</p>
+            </li>
+
+            <li className="flex gap-3">
+              <span className="text-purple-500 text-xl mt-1">✓</span>
+              <p><strong>Privacidade e Transparência:</strong> o usuário controla 100% dos seus dados.</p>
+            </li>
           </ul>
-        </section>
+        </ContentBlock>
 
-        <section>
-          <h2 className="text-2xl font-semibold mb-3 flex items-center gap-x-2">
-            <BsTelephoneInboundFill />
-            Contato
-          </h2>
-          <div className="text-gray-700 leading-relaxed space-y-2 dark:text-gray-50">
-            <p>
-              <span className="font-medium ">Editorial:</span>{" "}
-              <a
-                href="mailto:redacao@exemplo.com"
-                className="text-blue-600 hover:underline"
-              >
-                redacao@exemplo.com
-              </a>
-            </p>
-            <p>
-              <span className="font-medium">Comercial:</span>{" "}
-              <a
-                href="mailto:anuncios@exemplo.com"
-                className="text-blue-600 hover:underline"
-              >
-                anuncios@exemplo.com
-              </a>
-            </p>
-          </div>
-        </section>
+        {/* CTA */}
+        <div className="pt-8 flex justify-center">
+          <a
+            href="/integrantes"
+            className="text-lg text-purple-600 font-semibold hover:text-purple-800 flex items-center gap-2"
+          >
+            Conheça Nossa Equipe
+            <FaUsers />
+          </a>
+        </div>
       </div>
-    </div>
+    </main>
   );
 }

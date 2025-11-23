@@ -55,10 +55,6 @@ export default function Cabecalho() {
         <Link to="/sobre" className={linkClasses}>
           <FaRegFileAlt /> Sobre
         </Link>
-
-        <Link to="/contato" className={linkClasses}>
-          Contato
-        </Link>
         
         <Link to="/dashboard" className={linkClasses}>
           <FaChartLine /> Dashboard
@@ -68,7 +64,7 @@ export default function Cabecalho() {
           Soft Skills
         </Link>
 
-        <Link to="/bemestar" className={linkClasses}>
+        <Link to="/BemEstar" className={linkClasses}>
           <FaRegSmile /> Bem-Estar
         </Link>
 
