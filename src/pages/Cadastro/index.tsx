@@ -55,7 +55,7 @@ export default function Cadastro() {
       });
 
       if (!responsePost.ok) {
-        throw new Error("Nao foi possivel cadastrar o usuario.");
+        throw new Error("Não foi possível cadastrar o usuário.");
       }
 
       // 4. Redirecionar para o login após sucesso
@@ -72,13 +72,13 @@ export default function Cadastro() {
   }
 
   return (
-    <main className="min-h-screen flex flex-col justify-center items-center bg-gray-50 dark:bg-gray-700 px-4 sm:px-6 lg:px-8">
-      <section className="w-full max-w-md sm:max-w-lg md:max-w-xl bg-gray-900 shadow-xl rounded-lg p-6 sm:p-8 md:p-10 space-y-6 border-2 border-gray-200 dark:border-gray-950">
+    <main className="min-h-screen flex flex-col justify-center items-center bg-gray-50 p-4">
+      <section className="w-full max-w-md sm:max-w-lg md:max-w-xl bg-white shadow-2xl rounded-xl p-8 sm:p-10 space-y-6 border-t-4 border-purple-500">
         {/* Botão Voltar */}
         <div className="flex justify-start">
           <button
             onClick={() => navigate("/")}
-            className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium cursor-pointer"
+            className="flex items-center gap-2 text-gray-700 hover:text-purple-600 transition-colors duration-200 text-sm font-medium cursor-pointer"
             aria-label="Voltar para a página inicial"
           >
             <svg 
@@ -98,23 +98,23 @@ export default function Cadastro() {
           </button>
         </div>
 
-        {/* Logo NewsLab clicável */}
-        <div className="text-center">
+        {/* Logo MindWork clicável */}
+        <div className="text-center mb-6">
           <Link 
             to="/" 
             className="inline-block transition-transform hover:scale-105 active:scale-95"
           >
-            <span className="text-3xl sm:text-4xl font-black tracking-tight text-white">
-              News<span className="text-green-500">Lab</span>
+            <span className="text-3xl sm:text-4xl font-black tracking-tight text-gray-900">
+              Mind<span className="text-purple-600">Work</span>
             </span>
           </Link>
         </div>
 
         <div className="text-center space-y-2">
-          <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-white">
+          <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-gray-900">
             Cadastro
           </h2>
-          <p className="text-gray-300 text-sm sm:text-base font-sans">
+          <p className="text-gray-600 text-sm sm:text-base">
             Crie sua conta para continuar
           </p>
         </div>
@@ -123,7 +123,7 @@ export default function Cadastro() {
           <div>
             <label
               htmlFor="nome"
-              className="block text-sm font-medium text-white mb-1"
+              className="block text-sm font-medium text-gray-700 mb-2"
             >
               Nome
             </label>
@@ -135,14 +135,14 @@ export default function Cadastro() {
               required
               disabled={isSubmitting}
               placeholder="Seu nome completo"
-              className="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-white disabled:bg-gray-100 disabled:text-gray-500 placeholder:text-gray-400 text-white bg-transparent"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 disabled:bg-gray-100 disabled:text-gray-500 placeholder:text-gray-400 text-gray-900 bg-transparent"
             />
           </div>
 
           <div>
             <label
               htmlFor="nomeUser"
-              className="block text-sm font-medium text-white mb-1"
+              className="block text-sm font-medium text-gray-700 mb-2"
             >
               Nome de usuário
             </label>
@@ -154,14 +154,14 @@ export default function Cadastro() {
               required
               disabled={isSubmitting}
               placeholder="Seu nome de usuário"
-              className="w-full px-3 py-2 sm:px-4 sm:py-3  border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-white disabled:bg-gray-100 disabled:text-gray-500 placeholder:text-gray-400 text-white bg-transparent"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 disabled:bg-gray-100 disabled:text-gray-500 placeholder:text-gray-400 text-gray-900 bg-transparent"
             />
           </div>
 
           <div>
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-white mb-1"
+              className="block text-sm font-medium text-gray-700 mb-2"
             >
               E-mail
             </label>
@@ -174,14 +174,14 @@ export default function Cadastro() {
               required
               disabled={isSubmitting}
               placeholder="seu.email@exemplo.com"
-              className="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-400  rounded-md focus:outline-none focus:ring-2 focus:ring-white disabled:bg-gray-100 disabled:text-gray-500 placeholder:text-gray-400 text-white bg-transparent"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 disabled:bg-gray-100 disabled:text-gray-500 placeholder:text-gray-400 text-gray-900 bg-transparent"
             />
           </div>
 
           <div>
             <label
               htmlFor="senha"
-              className="block text-sm font-medium text-white mb-1"
+              className="block text-sm font-medium text-gray-700 mb-2"
             >
               Senha
             </label>
@@ -194,12 +194,12 @@ export default function Cadastro() {
               required
               disabled={isSubmitting}
               placeholder="Digite sua senha"
-              className="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-white disabled:bg-gray-100 disabled:text-gray-500 placeholder:text-gray-400 text-white bg-transparent"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 disabled:bg-gray-100 disabled:text-gray-500 placeholder:text-gray-400 text-gray-900 bg-transparent"
             />
           </div>
 
           {error && (
-            <div className="p-3 rounded-md text-sm bg-red-100 text-red-700 border border-red-300">
+            <div className="p-3 rounded-lg text-sm bg-red-100 text-red-700 border border-red-300">
               {error}{" "}
               {error.includes("login") && (
                 <Link
@@ -213,47 +213,20 @@ export default function Cadastro() {
           )}
 
           <button
-          type="submit"
-          disabled={isSubmitting}
-          className="w-full flex justify-center items-center py-2 sm:py-3 border border-transparent rounded-md text-base sm:text-lg font-semibold text-white bg-[#1C3546] hover:bg-[#30576b] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white disabled:bg-gray-400 transition duration-150 ease-in-out cursor-pointer disabled:cursor-not-allowed"
+            type="submit"
+            disabled={isSubmitting}
+            className="w-full py-3 bg-purple-600 text-white font-semibold text-lg rounded-lg transition duration-300 hover:bg-purple-700 disabled:bg-gray-400 shadow-md"
           >
-            {isSubmitting ? (
-              <span className="flex items-center">
-                <svg
-                  className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <circle
-                    className="opacity-25"
-                    cx="12"
-                    cy="12"
-                    r="10"
-                    stroke="currentColor"
-                    strokeWidth="4"
-                  ></circle>
-                  <path
-                    className="opacity-75"
-                    fill="currentColor"
-                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                  ></path>
-                </svg>
-                {isSubmitting ? "Enviando..." : "Cadastrar"}
-              </span>
-            ) : (
-              "Cadastrar"
-            )}
+            {isSubmitting ? "Enviando..." : "Cadastrar"}
           </button>
         </form>
 
-        <div className="text-center pt-6 sm:pt-8 border-t border-gray-700 mt-4 sm:mt-6">
-          <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
+        <div className="text-center pt-6 sm:pt-8 mt-4 sm:mt-6">
+          <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
             Já tem uma conta?{" "}
             <Link
               to="/login"
-              className="font-medium text-white underline-offset-4 hover:underline hover:text-green-500 focus-visible:text-green-500 transition-colors"
-              aria-label="Ir para a página de login"
+              className="font-semibold text-purple-600 hover:text-purple-800 transition"
             >
               Faça seu login
             </Link>
