@@ -33,7 +33,7 @@ export const TEAM_MEMBERS = [
     rm: "RM565605",
     class: "1TDSPW",
     githubUrl: "https://github.com/PedroCLH2",
-    linkedinUrl: "#",
+    linkedinUrl: "https://www.linkedin.com/in/pedro-crus-0707b7360/",
     foto: "",
   },
 ];
