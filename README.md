@@ -141,3 +141,10 @@ Projeto para fins educacionais, sem uso comercial.
 
 https://github.com/EvellynbFerreira/Mindwork-GS
 
+------------------------------------------------------------------------
+
+## 📄 Link video
+
+https://youtu.be/M0cyLdIfXrU
+
+

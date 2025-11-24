@@ -24,7 +24,7 @@ export const TEAM_MEMBERS = [
     rm: "RM562977",
     class: "1TDSPW",
     githubUrl: "https://github.com/HenriqueSinkeviciusMaran",
-    linkedinUrl: "#",
+    linkedinUrl: "https://www.linkedin.com/in/henrique-sinkevicius-maran-99962a25a/",
     foto: "",
   },
   {
@@ -33,7 +33,7 @@ export const TEAM_MEMBERS = [
     rm: "RM565605",
     class: "1TDSPW",
     githubUrl: "https://github.com/PedroCLH2",
-    linkedinUrl: "#",
+    linkedinUrl: "https://www.linkedin.com/in/pedro-crus-0707b7360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app ",
     foto: "",
   },
 ];
